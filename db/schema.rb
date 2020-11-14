@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_14_203500) do
+ActiveRecord::Schema.define(version: 2020_11_14_221757) do
 
-  create_table "event", force: :cascade do |t|
+  create_table "events", force: :cascade do |t|
     t.string "name"
     t.string "time"
-    t.string "location"
+    t.string "place"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.string "events"
-    t.string "users"
+    t.string "user_id"
+    t.string "event_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
