@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
     has_many :events, :reservations
-    has-many :events, through: :reservations
+    has_many :events, through: :reservations
 
     attr_reader :name
 

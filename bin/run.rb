@@ -2,7 +2,8 @@ require_relative '../config/environment'
 
 
 
-puts "Welcome to Chicago Live"
+cli = CommandLineInterface.new
+cli.greet
 
 puts "What's your name?"
 
