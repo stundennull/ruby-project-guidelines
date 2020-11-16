@@ -1,4 +1,6 @@
-
+User.destroy_all
+Reservation.destroy_all
+Event.destroy_all
 
 user1 = User.create(name: "Sam")
 user2 = User.create(name: "Alexa")

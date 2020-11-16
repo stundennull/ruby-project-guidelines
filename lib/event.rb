@@ -8,17 +8,17 @@ class Event < ActiveRecord::Base
         end
     end
 
-    # def self.find_event_by_venue(venue)
-    #     self.all.select do |event|
-    #         event.venue == venue
-    #     end
-    # end
+    def self.find_event_by_venue(venue)
+        self.all.select do |event|
+            event.venue == venue
+        end
+    end
 
-    # def self.find_event_by_date(date)
-    #     self.all.select do |event|
-    #         event.date == date
-    #     end
-    # end
+    def self.find_event_by_date(date)
+        self.all.select do |event|
+            event.date == date
+        end
+    end
 end
 
 
